@@ -3,34 +3,34 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    public $timestamps = false;
-    protected $table = 'users';
-    protected $fillable = [
-        'name',
-        'national_number',
-        'gender',
-        'blood',
-        'birth_place',
-        'birth_date',
-        'phone',
-        'address',
-        'username',
-        'password',
-    ];
+    protected $guarded = ['id'];
+    // protected $fillable = [
+    //     'name',
+    //     'national_number',
+    //     'gender',
+    //     'blood',
+    //     'birth_place',
+    //     'birth_date',
+    //     'phone',
+    //     'address',
+    //     'username',
+    //     'password',
+    // ];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -39,7 +39,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        // 'remember_token',
+        'remember_token',
     ];
 
     /**
@@ -47,7 +47,7 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        // 'email_verified_at' => 'datetime',
-    ];
+    // protected $casts = [
+    //     // 'email_verified_at' => 'datetime',
+    // ];
 }

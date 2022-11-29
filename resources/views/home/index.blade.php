@@ -43,7 +43,7 @@
       </div>
     </div> <!-- .page-section -->
 
-    <div class="page-section pb-0">
+    <div class="page-section pb-0" id="about">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
@@ -61,7 +61,7 @@
     </div> <!-- .bg-light -->
   </div> <!-- .bg-light -->
 
-  <div class="page-section">
+  <div class="page-section" id="doctors">
     <div class="container">
       <h1 class="text-center mb-5 wow fadeInUp">Our Doctors</h1>
 

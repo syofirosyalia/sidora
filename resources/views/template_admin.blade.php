@@ -64,9 +64,10 @@
                 <div class="container-fluid">
                     <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
                         <li class="nav-item dropdown hidden-caret">
-                            <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+                            <h3 class="text-white d-inline">{{ auth()->user()->name }}</h3>
+                            <a class="dropdown-toggle d-inline profile-pic" data-toggle="dropdown" href="#"
                                 aria-expanded="false">
-                                <div class="avatar-sm">
+                                <div class="avatar-sm d-inline">
                                     <img src="{{ url('user.png') }}" alt="..."
                                         class="avatar-img rounded-circle">
                                 </div>
@@ -133,6 +134,7 @@
                                 <p>Riwayat Donor</p>
                             </a>
                         </li>
+                        @if (auth()->user()->hasRole('admin'))
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
@@ -151,6 +153,7 @@
                                 <p>Pengguna User</p>
                             </a>
                         </li>
+                        @endif
                     </ul>
                 </div>
             </div>
