@@ -23,7 +23,7 @@ class AdminController extends Controller
             'username' => 'admin',
             'password' => Hash::make('admin'),
             'active' => 1,
-        ]);
+        ])->assignRole('admin');
 
         return redirect('app-admin');
     }
