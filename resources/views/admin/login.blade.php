@@ -22,11 +22,11 @@
                                     ?>
                                 </p>
                             </div>
-                            <form action="{{ url('/app-admin/process-login') }}" method="POST" class="signin-form">
+                            <form action="{{ route('proccess-login') }}" method="POST" class="signin-form">
                                 @csrf
                                 <div class="form-group">
-                                    <label class="form-control-placeholder" for="username">Username</label>
-                                    <input type="text" name="username" autofocus class="form-control" required autofocus>
+                                    <label class="form-control-placeholder" for="username">Email</label>
+                                    <input type="email" name="email" autofocus class="form-control" required autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-control-placeholder" for="password">Password</label>
