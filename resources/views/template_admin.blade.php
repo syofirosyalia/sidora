@@ -104,7 +104,7 @@
                     </div>
                     <ul class="nav nav-danger">
                         <li class="nav-item {{ Request::is('app-admin/dashboard*') ? 'active' : '' }}">
-                            <a href="<?= url('app-admin/dashboard') ?>">
+                            <a href="<?php echo url('app-admin/dashboard') ?>">
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
