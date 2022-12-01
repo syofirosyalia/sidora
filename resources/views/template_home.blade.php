@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>SIDORA</title>
 
   <link rel="stylesheet" href="{{ url('/') }}/template_home/css/maicons.css">
 
@@ -33,7 +33,7 @@
             <div class="site-info">
               <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="#"><span class="mai-mail text-primary"></span> sidora@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -71,19 +71,19 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="#about">Tentang Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#doctors">Doctors</a>
+              <a class="nav-link" href="#doctors">Tentang Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="blog.html">Agenda Donor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Stok Darah</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login / Register</a>
+              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
             </li>
           </ul>
         </div> <!-- .navbar-collapse -->
