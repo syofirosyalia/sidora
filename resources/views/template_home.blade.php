@@ -74,13 +74,13 @@
               <a class="nav-link" href="#about">Tentang Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#doctors">Tentang Darah</a>
+              <a class="nav-link" href="#doctors">Agenda Donor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Agenda Donor</a>
+              <a class="nav-link" href="blog.html">Stok Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Stok Darah</a>
+              <a class="nav-link" href="#contact">About</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
