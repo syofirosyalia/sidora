@@ -14,9 +14,22 @@
         <div class="col-md-12">
             <div class="card full-height">
                 <div class="card-body">
-                    <div class="card-title">Halo Admin</div>
-
-                </div>
+                <table class="table table-bordered table-striped" id="example1">
+        <thead>
+            <tr>
+                <th> <a href="" class="far fa-calendar-alt fa-3x text-danger"></a></th>
+                <th>Lokasi</th>
+                <th>Waktu</th>
+                <th>Target Kantong</th>
+                
+                
+            </tr>
+            
+           
+            </thead>
+</table>
+<h3><b>Jadwal Donor UTD PMI Indramayu</b></h3>
+            <a href="" class="far fa-calendar-alt fa-2x text-danger"></a> <th>Senin - Minggu, 24 Jam</th>
             </div>
         </div>
     </div>

@@ -14,7 +14,19 @@
         <div class="col-md-12">
             <div class="card full-height">
                 <div class="card-body">
-                    <div class="card-title">Halo Admin</div>
+                <table class="table table-bordered table-striped" id="example1">
+        <thead>
+            <tr>
+                <th>NIK</th>
+                <th>Nama Pendonor</th>
+                <th>Terakhir Donor</th>
+                <th>Donor Kembali</th>
+                
+                
+            </tr>
+           
+            </thead>
+</table>
 
                 </div>
             </div>
