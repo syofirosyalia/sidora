@@ -50,16 +50,16 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+        <img src="{{ url('/') }}/template_home/img/logoo.png" width="200px" height="50px" alt="">
 
-        <form action="#">
+        {{-- <form action="#">
           <div class="input-group input-navbar">
             <div class="input-group-prepend">
               <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
             </div>
             <input type="text" class="form-control" placeholder="Enter keyword .." aria-label="Username" aria-describedby="icon-addon1">
           </div>
-        </form>
+        </form> --}}
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -67,23 +67,24 @@
 
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+              <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Home</a>
+            </li>
+            <li class="nav-item {{ Request::is('tentang-darah') ? 'active' : '' }}"> 
+              <a class="nav-link {{ Request::is('tentang-darah') ? 'active' : '' }}" href="tentang-darah">Tentang Darah</a>
+            </li>
+            <li class="nav-item {{ Request::is('agenda-donor') ? 'active' : '' }}">
+              <a class="nav-link {{ Request::is('agenda-donor') ? 'active' : '' }}" href="agenda-donor">Agenda Donor</a>
+              {{-- <a class="nav-link" href="#agendadonor">Agenda Donor</a> --}}
+            </li>
+            <li class="nav-item {{ Request::is('stok-darah') ? 'active' : '' }}">
+              <a class="nav-link {{ Request::is('stok-darah') ? 'active' : '' }}" href="stok-darah">Stok Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang Darah</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#doctors">Agenda Donor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Stok Darah</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
+              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Masuk</a>
             </li>
           </ul>
         </div> <!-- .navbar-collapse -->

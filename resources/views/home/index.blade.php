@@ -4,9 +4,9 @@
     <div class="page-hero bg-image overlay-dark" style="background-image: url({{ url('/') }}/template_home/img/pmi1.jpg);">
         <div class="hero-section">
             <div class="container text-center wow zoomIn">
-                <span class="subhead">Sistem Informasi Donor Darah</span>
+                {{-- <span class="subhead">Sistem Informasi Donor Darah</span> --}}
                 <h1 class="display-4">KATAKAN SIDORA</h1>
-                <a href="#" class="btn btn-primary">Let's Donate Blood</a>
+                <a href="registrasi" class="btn btn-primary">Daftar</a>
             </div>
         </div>
     </div>
@@ -43,13 +43,13 @@
       </div>
     </div> <!-- .page-section -->
 
-    <div class="page-section pb-0" id="about">
+    <div class="page-section pb-0" id="tentangdarah">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Selamat Datang <br> Salam Kemanusiaan</h1>
             <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
-            <a href="about.html" class="btn btn-primary">Learn More</a>
+            <a href="/tentang-darah" class="btn btn-primary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1">
@@ -61,9 +61,54 @@
     </div> <!-- .bg-light -->
   </div> <!-- .bg-light -->
 
-  <div class="page-section" id="doctors">
+  <div class="page-section" id="agendadonor">
     <div class="container">
-      <h1 class="text-center mb-5 wow fadeInUp">Our Doctors</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-6">
+          <div class="card ml-4">
+            <div class="row">
+              <div class="col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Agenda Donor
+                    </h5>
+                    <p>Agenda Donor merupakan jadwal Donor Darah yang sedang berlangsung di berbagai tempat di beberapa daerah Kabupaten Indramayu.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <img class="card-img" src="/template_home/img/agenda.png" alt="Card image cap">
+              </div>
+              <div class="text-right ">
+                <a href="agenda-donor" class="btn btn-primary float-right">Lihat Jadwal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                     Stok Darah
+                    </h5>
+                    <p>Stok Darah yang tersedia di UTD PMI Indramayu sesuai dengan data yang terbaru.</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <img class="card-img" src="/template_home/img/darah1.png" alt="Card image cap">
+              </div>
+              <div class="text-right">
+                <a href="stok-darah" class="btn btn-primary float-right">Lihat Stok</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      {{-- <h1 class="text-center mb-5 wow fadeInUp">Our Doctors</h1>
 
       <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
         <div class="item">
@@ -141,7 +186,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 
@@ -153,7 +198,7 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Covid19</a>
+                <a href="#">stokdarah</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
                 <img src="{{ url('/') }}/template_home/img/blog/blog_1.jpg" alt="">
@@ -220,7 +265,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div
 
         <div class="col-12 text-center mt-4 wow zoomIn">
           <a href="blog.html" class="btn btn-primary">Read More</a>

@@ -10,4 +10,19 @@ class HomeController extends Controller
     {
         return view('home.index');
     }
+
+    public function tentang_darah()
+    {
+        return view('home.tentangdarah');
+    }
+
+    public function agenda_donor()
+    {
+        return view('home.agendadonor');
+    }
+
+    public function stok_darah()
+    {
+        return view('home.stokdarah');
+    }
 }
