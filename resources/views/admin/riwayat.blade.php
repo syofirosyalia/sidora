@@ -19,14 +19,18 @@
             <tr>
                 <th>NIK</th>
                 <th>Nama Pendonor</th>
-                <th>Terakhir Donor</th>
-                <th>Donor Kembali</th>
-                
-                
+                <th>Tanggal Donor</th>
+                <th></th>
             </tr>
-           
             </thead>
-</table>
+            <tbody>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+    </table>
 
                 </div>
             </div>

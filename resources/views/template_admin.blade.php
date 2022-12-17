@@ -134,7 +134,7 @@
                                 <p>Riwayat Donor</p>
                             </a>
                         </li>
-                        @if (auth()->user()->hasRole('admin'))
+                        @can('admin')
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
@@ -153,7 +153,7 @@
                                 <p>Pengguna User</p>
                             </a>
                         </li>
-                        @endif
+                        @endcan
                     </ul>
                 </div>
             </div>
@@ -187,8 +187,8 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="copyright ml-auto">
-                        2018, made with <i class="fa fa-heart heart text-danger"></i> by <a
-                            href="https://www.themekita.com">ThemeKita</a>
+                        2022, <i class=""></i> by <a
+                            href="https://www.themekita.com">SIDORA PART II</a>
                     </div>
                 </div>
             </footer>
