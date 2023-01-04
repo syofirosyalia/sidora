@@ -20,4 +20,4 @@ include("homeRoutes.php");
 include("adminRoutes.php");
 
 //Route User
-// include("userRoutes.php");
+include("userRoutes.php");

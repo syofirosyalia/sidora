@@ -19,32 +19,36 @@ class UserRolePermissionSeeder extends Seeder
      */
     public function run()
     {
-        DB::beginTransaction();
+        
         try {
-            
+            DB::beginTransaction();
+
             Permission::create(['name' => 'read']);
             Permission::create(['name' => 'create']);
             Role::create(['name' => 'user'])->givePermissionTo(['read']);
             Role::create(['name' => 'admin'])->givePermissionTo(['create']);
-            
+
             // $user->assignRole('user');
             // $admin->assignRole('admin');
-            
-                $user = User::create([
-                    'name' => 'user',
-                    'email' => 'user@gmail.com',
-                    'password' => bcrypt('password'),
-                    'remember_token' => Str::random(10),
-                ])->assignRole('user');
-                $admin = User::create([
-                    'name' => 'admin',
-                    'email' => 'admin@gmail.com',
-                    'password' => bcrypt('password'),
-                    'remember_token' => Str::random(10),
-                ])->assignRole('admin');
-        DB::commit();
-        }catch(\Trhowable $th){
+
+            $user = User::create([
+                'name' => 'user',
+                'email' => 'user@gmail.com',
+                'password' => bcrypt('password'),
+                'user' => 0,
+                'remember_token' => Str::random(10),
+            ])->assignRole('user');
+            $admin = User::create([
+                'name' => 'admin',
+                'email' => 'admin@gmail.com',
+                'password' => bcrypt('password'),
+                'user' => 0,
+                'remember_token' => Str::random(10),
+            ])->assignRole('admin');
+            DB::commit();
+        } catch (\Throwable $th) {
             DB::rollback();
+            throw $th;
         }
     }
 }

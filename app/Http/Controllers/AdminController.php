@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Models\AdminModel;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,7 +13,9 @@ class AdminController extends Controller
 {
     public function login()
     {
+
         return view('admin.login');
+
     }
 
     public function create_admin()
@@ -57,14 +61,48 @@ class AdminController extends Controller
 
     public function blood()
     {
-        return view('admin.blood');
+        $bloods = DB::table('blood')->select([
+                'id',
+                'jenis_darah',
+                'a',
+                'b',
+                'ab',
+                'o'
+            ])->get();
+        $data = [
+            'bloods' => $bloods
+        ];
+        return view('admin.blood', compact('bloods'));
     }
+    
     public function agenda()
     {
-        return view('admin.agenda');
+        $agenda = DB::table('agenda')->select([
+            'id',
+            'tanggal',
+            'tempat',
+            'target',
+        ])->get();
+        $data = [
+            'agenda' => $agenda
+        ];
+            
+        return view('admin.agenda', $data );
     }
     public function riwayat()
     {
-        return view('admin.riwayat');
+
+    if (auth()->user()->role == 1) {
+            $Riwayat = DB::table('formulir')->where('user_id', auth()->user()->id)->get();
+        } else {
+            $Riwayat = DB::table('formulir')->get();
+        }
+        
+        $data = [
+            'riwayat' => $Riwayat
+        ];
+        return view('admin.riwayat', $data);
+
+
     }
 }

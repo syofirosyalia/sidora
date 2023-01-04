@@ -14,7 +14,29 @@
         <div class="col-md-12">
             <div class="card full-height">
                 <div class="card-body">
-                    <div class="card-title">Halo Admin</div>
+                <table class="table table-bordered table-striped" id="example1">
+        <thead>
+            <tr>
+                <th>NIK</th>
+                <th>Nama Pendonor</th>
+                <th>Tanggal Donor</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($riwayat as $r )
+                <tr>
+                
+                <td>{{ $r->nik }}</td>
+                                    <td>{{ $r->nama }}</td>
+                                    <td>{{ $r->tgl_donor }}</td>   
+                    
+                </tr>
+             
+                
+                @endforeach
+            </tbody>
+    </table>
 
                 </div>
             </div>

@@ -18,7 +18,7 @@ class AdminModel extends Authenticatable
      * @var array<int, string>
      */
     public $timestamps = false;
-    protected $table = 'administrators';
+    protected $table = 'users';
     protected $fillable = [
         'name',
         'phone',
