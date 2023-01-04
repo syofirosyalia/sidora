@@ -10,10 +10,15 @@
        <br>
        <a href="/app-admin/agenda" class="btn btn-danger">Kembali</a>
        <br>
+<<<<<<< HEAD
        <form action='{{ route("generate-pdf") }}' method='POST'>
        {{ csrf_field() }} 
        <input type="hidden" name='tgl_donor' value="{{$agenda->tanggal}}">
               <div class="my-3 p-3 bg-body rounded shadow-sm">
+=======
+       <form action='/app-admin/formulir/store' method='post'>
+       {{ csrf_field() }}        <div class="my-3 p-3 bg-body rounded shadow-sm">
+>>>>>>> f3b333f31f6bdf358cc0a571934f22874558d556
             <div class="mb-3 row">
                 <label for="nik" class="col-sm-2 col-form-label">Nomor Induk Kependudukan (NIK)</label>
                 <div class="col-sm-10">

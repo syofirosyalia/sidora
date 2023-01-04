@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\FormulirModel;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\DB;
 
 
@@ -15,12 +16,14 @@ class FormulirController extends Controller
     public function index($id)
     {
         $agenda = DB::table('agenda')->where('id', $id)->first();
-        
+
         $title = 'Formulir';
         $slug = 'Formulir';
         $dataForm = FormulirModel::all();
         return view('Formulir', compact('title', 'slug', 'dataForm', 'agenda'));
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -34,7 +37,7 @@ class FormulirController extends Controller
 
         public function show()
     {
-        
+
         return view('formulir');
     }
 
@@ -62,11 +65,13 @@ class FormulirController extends Controller
             'jenis_darah' => $request->jenis_darah,
             'tipe_darah' => $request->tipe_darah,
             'status_pernikahan' => $request->status_pernikahan,
+
             'user_id' => auth()->user()->id,
             'tgl_donor' => $request->tgl_donor
         ]);
         if($result){
             return redirect('/app-admin/agenda');
+
         }else{
             return $this->create();
         }

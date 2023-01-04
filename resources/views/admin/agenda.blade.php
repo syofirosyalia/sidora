@@ -37,12 +37,21 @@
                     <td>{{ $agenda->tempat }}</td>
                     <td>{{ $agenda->target }}</td>
                     <td>
+<<<<<<< HEAD
                         @can('create')
                         <a href="/app-admin/agenda/edit/{{ $agenda->id }}" class="btn btn-sm btn-warning">Edit</a>
                         <a href="/app-admin/agenda/destroy/{{ $agenda->id }}" class="btn btn-sm btn-danger">Hapus</a>
                         @endcan
                         @can('read')
                         <a href="/app-admin/{{$agenda->id}}/formulir" class="btn btn-sm btn-primary">Donor</a>
+=======
+                        @can('admin')
+                        <a href="/app-admin/agenda/edit/{{ $agenda->id }}" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="/app-admin/agenda/destroy/{{ $agenda->id }}" class="btn btn-sm btn-danger">Hapus</a>
+                        @endcan
+                        @can('user')
+                        <a href="/app-admin/formulir" class="btn btn-sm btn-primary">Donor</a>
+>>>>>>> f3b333f31f6bdf358cc0a571934f22874558d556
                         @endcan
                        
                     </td>

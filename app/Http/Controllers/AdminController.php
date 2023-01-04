@@ -13,7 +13,9 @@ class AdminController extends Controller
 {
     public function login()
     {
-        return view ('admin.login');
+
+        return view('admin.login');
+
     }
 
     public function create_admin()
@@ -89,7 +91,8 @@ class AdminController extends Controller
     }
     public function riwayat()
     {
-        if (auth()->user()->role == 1) {
+
+    if (auth()->user()->role == 1) {
             $Riwayat = DB::table('formulir')->where('user_id', auth()->user()->id)->get();
         } else {
             $Riwayat = DB::table('formulir')->get();
@@ -99,6 +102,7 @@ class AdminController extends Controller
             'riwayat' => $Riwayat
         ];
         return view('admin.riwayat', $data);
+
 
     }
 }

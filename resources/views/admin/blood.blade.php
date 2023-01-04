@@ -37,7 +37,11 @@
                 <td>{{ $blood->ab }}</td>
                 <td>{{ $blood->o }}</td>
                 <td>
+<<<<<<< HEAD
                 @can('create')
+=======
+                @can('admin')
+>>>>>>> f3b333f31f6bdf358cc0a571934f22874558d556
                     <a href="{{ url('/app-admin/edit/' . $blood->id) }}" class="btn btn-sm btn-warning">Edit</a>
                 @endcan
                 </td>

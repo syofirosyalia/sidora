@@ -20,6 +20,7 @@
                 <th>NIK</th>
                 <th>Nama Pendonor</th>
                 <th>Tanggal Donor</th>
+<<<<<<< HEAD
                 
             </tr>
             </thead>
@@ -35,6 +36,17 @@
              
                 
                 @endforeach
+=======
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+>>>>>>> f3b333f31f6bdf358cc0a571934f22874558d556
             </tbody>
     </table>
 

@@ -134,7 +134,7 @@
                                 <p>Riwayat Donor</p>
                             </a>
                         </li>
-                        @can('create')
+                        @can('admin')
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
