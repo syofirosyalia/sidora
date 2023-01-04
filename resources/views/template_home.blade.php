@@ -31,9 +31,9 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="#"><span class="mai-call text-danger"></span> +00 123 4455 6666</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> sidora@gmail.com</a>
+              <a href="#"><span class="mai-mail text-danger"></span> sidora@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -81,10 +81,7 @@
               <a class="nav-link {{ Request::is('stok-darah') ? 'active' : '' }}" href="stok-darah">Stok Darah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Masuk</a>
+              <a class="btn btn-danger ml-lg-3" href="{{ route('login') }}">Masuk</a>
             </li>
           </ul>
         </div> <!-- .navbar-collapse -->
@@ -143,7 +140,7 @@
 
       <hr>
 
-      <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">SIDARAH</a>. All right reserved</p>
+      <p id="copyright">Copyright &copy; 2022 <a href="" target="_blank">SIDORA PART II</a>. All right reserved</p>
     </div>
   </footer>
 

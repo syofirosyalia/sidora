@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\AdminModel;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class RegistrasiController extends Controller
 {
@@ -14,16 +19,49 @@ class RegistrasiController extends Controller
     public function index()
     {
         return view('home.registrasi');
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function registrasi_add(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required',
+            'tanggal_lahir'=>'required',
+            'email'=>'required|email|unique:users',
+            'nik' =>'required|numeric',
+            'password'=>'required|min:8',
+            'password_confirmation'=>'required|min:8|same:password'
+        ],
+        [
+            'name.required' => "Nama lengkap wajib diisi",
+            'tanggal_lahir.required' => "Tanggal lahir wajib diisi",
+            'email.required' => "Email wajid wajib diisi",
+            'email.unique' => "Email sudah terdaftar",
+            'email.email' => "format email yang digunakan tidak valid",
+            'nik.required' => "NIK wajib diisi",
+            'nik.numeric' => "harus diisi angka",
+            'password.required' => "password wajib diisi",
+            'password.min'=> "password minimal 8 karakter",
+            'password_confirmation.required' => "password wajib diisi",
+            'password_confirmation.same' => "Password yang diisi harus sesuai dengan sebelumnya"
+        ]);
+
+        $dataInput = [
+            'name' => $request->input('name'),
+            'tanggal_lahir' => $request->input('tanggal_lahir'),
+            'email'=>$request->input('email'),
+            'nik' => $request->input('nik'),
+            'role' => 1,
+            'password' => Hash::make($request->input('password'))
+        ];
+
+        User::create($dataInput);
+
+        session()->flash('msg', "<strong>Registrasi Berhasil. </strong> <br> Silahkan login!");
+        session()->flash('msg_status', 'success');
+
+        return redirect('/login');
+
     }
 
     /**

@@ -8,7 +8,7 @@
  */
 
 :root {
-  --primary: #00D9A5;
+  --primary: #FF4943;
   --accent: #FF3D85;
   --secondary: #4E5AFE;
   --warning: #EED818;
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #07be94;
+  color: #FF4943;
   text-decoration: none;
   background-color: transparent;
 }
@@ -60,6 +60,12 @@ a:hover {
 }
 
 /* Color systems */
+/* .bg-fixed {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} */
 .bg-primary {
   background-color: #00D9A5 !important;
 }
@@ -270,15 +276,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #07be94;
+  background-color: #FF4943;;
   border-color: transparent;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #00D9A5;
-  border-color: #07be94;
+  background-color: #FF4943;
+  border-color: #FF4943;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -935,7 +941,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
-  color: #00D9A5;
+  color: #FF4943;
 }
 
 
@@ -1445,7 +1451,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-blog .post-title:hover,
 .card-blog .post-title a:hover {
   text-decoration: none;
-  color: #07be94;
+  color: #FF4943;
 }
 
 .card-blog .site-info {
@@ -1500,7 +1506,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .blog-details .post-meta a:hover {
-  color: #07be94;
+  color: #FF4943;
   text-decoration: none;
 }
 

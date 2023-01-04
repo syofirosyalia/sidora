@@ -12,4 +12,5 @@ Route::get("/stok-darah", [HomeController::class,'stok_darah']);
 // Route::get("/registrasi", [HomeController::class, 'registrasi']);
 
 // Registrasi
-Route::resource("/registrasi" ,RegistrasiController::class);
+Route::get("/registrasi" , [RegistrasiController::class, 'index']);
+Route::post("/registrasi/registrasi_add" ,[RegistrasiController::class , 'registrasi_add']);

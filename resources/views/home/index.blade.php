@@ -6,50 +6,22 @@
             <div class="container text-center wow zoomIn">
                 {{-- <span class="subhead">Sistem Informasi Donor Darah</span> --}}
                 <h1 class="display-4">KATAKAN SIDORA</h1>
-                <a href="registrasi" class="btn btn-primary">Daftar</a>
+                <a href="registrasi" class="btn btn-danger">Daftar</a>
             </div>
         </div>
     </div>
 
   <div class="bg-light">
-    <div class="page-section py-3 mt-md-n5 custom-index">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card-service wow fadeInUp">
-              <div class="circle-shape bg-secondary text-white">
-                <span class="mai-chatbubbles-outline"></span>
-              </div>
-              <p><span>Chat</span> with a doctors</p>
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card-service wow fadeInUp">
-              <div class="circle-shape bg-primary text-white">
-                <span class="mai-shield-checkmark"></span>
-              </div>
-              <p><span>One</span>-Health Protection</p>
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card-service wow fadeInUp">
-              <div class="circle-shape bg-accent text-white">
-                <span class="mai-basket"></span>
-              </div>
-              <p><span>One</span>-Health Pharmacy</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- .page-section -->
+
+  
 
     <div class="page-section pb-0" id="tentangdarah">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Selamat Datang <br> Salam Kemanusiaan</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
-            <a href="/tentang-darah" class="btn btn-primary">Learn More</a>
+            <p class="text-grey mb-4">Informasi seputar Donor Darah</p>
+            <a href="/tentang-darah" class="btn btn-danger">Baca Selengkapnya</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1">
@@ -80,8 +52,12 @@
               <div class="col-lg-4">
                   <img class="card-img" src="/template_home/img/agenda.png" alt="Card image cap">
               </div>
-              <div class="text-right ">
-                <a href="agenda-donor" class="btn btn-primary float-right">Lihat Jadwal</a>
+            </div>
+            <div class="row mb-3 mr-2">
+              <div class="col-lg-12">
+                <div class="text-right ">
+                  <a href="agenda-donor" class="btn btn-danger float-right">Lihat Jadwal</a>
+                </div>
               </div>
             </div>
           </div>
@@ -101,8 +77,12 @@
               <div class="col-lg-4">
                   <img class="card-img" src="/template_home/img/darah1.png" alt="Card image cap">
               </div>
-              <div class="text-right">
-                <a href="stok-darah" class="btn btn-primary float-right">Lihat Stok</a>
+            </div>
+            <div class="row mb-3 mr-2">
+              <div class="col-lg-12">
+                <div class="text-right">
+                  <a href="stok-darah" class="btn btn-danger float-right">Lihat Stok</a>
+                </div>
               </div>
             </div>
           </div>
@@ -192,28 +172,28 @@
 
   <div class="page-section bg-light">
     <div class="container">
-      <h1 class="text-center wow fadeInUp">Latest News</h1>
+      <h1 class="text-center wow fadeInUp">Tentang Kami</h1>
       <div class="row mt-5">
         <div class="col-lg-4 py-2 wow zoomIn">
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">stokdarah</a>
+                {{-- <a href="#"></a> --}}
               </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="{{ url('/') }}/template_home/img/blog/blog_1.jpg" alt="">
+              <a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y=" class="post-thumb">
+                <img src="{{ url('/') }}/template_home/img/1.JPEG" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">List of Countries without Coronavirus case</a></h5>
+              <h5 class="post-title"><a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y=">Giat PMI Kab.Indramayu</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="{{ url('/') }}/template_home/img/person/person_1.jpg" alt="">
+                    <img src="{{ url('/') }}/template_home/img/logopmi.PNG" alt="">
                   </div>
-                  <span>Roger Adams</span>
+                  <span>@indramayupmikabupaten</span>
                 </div>
-                <span class="mai-time"></span> 1 week ago
+                <span class="mai-time"></span>Rabu, 23 November 2022
               </div>
             </div>
           </div>
@@ -222,22 +202,22 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Covid19</a>
+                {{-- <a href="#"></a> --}}
               </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="{{ url('/') }}/template_home/img/blog/blog_2.jpg" alt="">
+              <a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y=" class="post-thumb">
+                <img src="{{ url('/') }}/template_home/img/2.jpeg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Recovery Room: News beyond the pandemic</a></h5>
+              <h5 class="post-title"><a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y="> Gempa bumi di Kab. Cianjur</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="{{ url('/') }}/template_home/img/person/person_1.jpg" alt="">
+                    <img src="{{ url('/') }}/template_home/img/logopmi.PNG" alt="">
                   </div>
-                  <span>Roger Adams</span>
+                  <span>@indramayupmikabupaten</span>
                 </div>
-                <span class="mai-time"></span> 4 weeks ago
+                <span class="mai-time"></span> Selasa, 22 November 2022
               </div>
             </div>
           </div>
@@ -246,37 +226,38 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Covid19</a>
+                {{-- <a href="#">Covid19</a> --}}
               </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="{{ url('/') }}/template_home/img/blog/blog_3.jpg" alt="">
+              <a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y=" class="post-thumb">
+                <img src="{{ url('/') }}/template_home/img/3.jpeg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">What is the impact of eating too much sugar?</a></h5>
+              <h5 class="post-title"><a href="https://instagram.com/indramayupmikabupaten?igshid=YmMyMTA2M2Y=">Korps Sukarela PMI Kab.Indramayu</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="{{ url('/') }}/template_home/img/person/person_2.jpg" alt="">
+                    <img src="{{ url('/') }}/template_home/img/logopmi.PNG" alt="">
                   </div>
-                  <span>Diego Simmons</span>
+                  <span>@indramayupmikabupaten</span>
                 </div>
-                <span class="mai-time"></span> 2 months ago
+                <span class="mai-time"></span> Sabtu s.d Minggu 29-30 November 2022
               </div>
             </div>
           </div>
         </div
 
         <div class="col-12 text-center mt-4 wow zoomIn">
-          <a href="blog.html" class="btn btn-primary">Read More</a>
+          {{-- <a href="blog.html" class="btn btn-danger">Read More</a> --}}
         </div>
 
       </div>
     </div>
   </div> <!-- .page-section -->
 
-  <div class="page-section">
-    <div class="container">
+  {{-- <div class="page-section"> --}}
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5414300004077!2d108.321994888855!3d-6.3237989999999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ebbfeabadcf9b%3A0xc95ce3ecdcef17ae!2sUDD%20PMI%20Kabupaten%20Indramayu!5e0!3m2!1sen!2sid!4v1671264998570!5m2!1sen!2sid" width="1262" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    {{-- <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
 
       <form class="main-form">
@@ -307,8 +288,8 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
+        <button type="submit" class="btn btn-danger mt-3 wow zoomIn">Submit Request</button>
       </form>
-    </div>
+    </div> --}}
   </div> <!-- .page-section -->
 @endsection
