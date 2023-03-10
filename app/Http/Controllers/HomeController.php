@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\AgendaModel;
 
 class HomeController extends Controller
 {
@@ -18,7 +19,9 @@ class HomeController extends Controller
 
     public function agenda_donor()
     {
-        return view('home.agendadonor');
+
+        $dataAgenda = AgendaModel::all();
+        return view('home.agendadonor', compact($dataAgenda));
     }
 
     public function stok_darah()

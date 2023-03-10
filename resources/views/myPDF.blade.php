@@ -1,3 +1,4 @@
+
 <h5>Nomor Induk Kependudukan : {{$nik}}</h5>
 <h5>Nama : {{$nama}}</h5>
 <h5>Alamat : {{$alamat}}</h5>

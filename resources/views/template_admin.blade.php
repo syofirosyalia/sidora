@@ -141,12 +141,15 @@
                             </span>
                             <h4 class="text-section">Navigasi Pengguna</h4>
                         </li>
+                        
                         <li class="nav-item  {{ Request::is('app-admin/user*') ? 'active' : '' }}">
                             <a href="{{ url('app-admin/user') }}">
                                 <i class="fas fa-users"></i>
                                 <p>Pengguna Admin</p>
                             </a>
                         </li>
+                       
+                        
                         <li class="nav-item  {{ Request::is('app-admin/user*') ? 'active' : '' }}">
                             <a href="{{ url('app-admin/user') }}">
                                 <i class="fas fa-users"></i>
