@@ -7,10 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-##Spek
+## Spek
 
-##Deskripsi
+## Deskripsi
+
 SIDORA merupakan aplikasi berbasis web yang menyediakan informasi donor darah serta dapat melakukan pendaftaran donor darah.
+
+## Cara Install
+
+
+## Credential
+
 
 ## About Laravel
 
