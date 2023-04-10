@@ -8,19 +8,35 @@
 </p>
 
 ## Spek
-
+LARAVEL : 9.19
+PHP: 8.0.2
+MYSQL: 10.4.24-MariaDB
 ## Deskripsi
 
 SIDORA merupakan aplikasi berbasis web yang menyediakan informasi donor darah serta dapat melakukan pendaftaran donor darah.
 
 ## Cara Install
+1. buatlah folder baru pada file manager lalu klik kanan pilih git bash here
+2. ketik perintah git clone https://github.com/syofirosyalia/sidora.git .
+3. jika sudah selesai donlod ketik code . untuk membuka folder tersebut
+4. buat file baru pada folder tersebut dengan nama ".env" dan diberi isi sesuai dengan pada isi file ".env.example"
+5. buka terminal lalu ketikan perintah composer install
+6. nyalakan xampp untuk menghubungkan database pada mysql.
+	pada pembuatan database di mysql buatlah sesuai dengan nama database pada line 14 di .env
+7. kemudian ketik php artisan migrate -- seed pada terminal
+8. ketik php artisan serve dan file akan terbuka kode 
+9. copy code tersebut lalu bukalah pada chrome
+10. selesai
 
 
 ## Credential
+admin@gmail.com
+password
+
+untuk user silahkan daftar registrasi terlebih dahulu
 
 
 ## About Laravel
-
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
